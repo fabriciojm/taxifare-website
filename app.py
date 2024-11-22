@@ -34,6 +34,26 @@ api_dict = dict(
     dropoff_latitude=[d_lat],
     passenger_count=[p]
 )
+# {'pickup_datetime': [date_and_time]}
 response = requests.get(url, api_dict)
 fare = response.json()['fare']
 st.write(f"Price of the ride is ${fare:.2f}")
+
+st.write("Comparison:")
+
+# # Uber dict
+# uber_dict = dict(
+#     start_latitude=p_lat,
+#     start_longitude=p_lon,
+#     end_latitude=d_lat,
+#     end_longitude=d_lon,
+# )
+
+
+# headers = {
+#     "Authorization": "Bearer IUZRnjKKPodj9-zXLlcJostZKsYkc3QyqnTYyLY3",
+#     "Accept-Language": "en_US",
+#     "Content-Type": "application/json"
+# }
+
+# uber_response = requests.get(url, params=uber_dit, headers=headers)
