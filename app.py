@@ -51,7 +51,7 @@ st.write("Comparison:")
 
 
 # headers = {
-#     "Authorization": "Bearer IUZRnjKKPodj9-zXLlcJostZKsYkc3QyqnTYyLY3",
+#     "Authorization": "Bearer ",
 #     "Accept-Language": "en_US",
 #     "Content-Type": "application/json"
 # }
